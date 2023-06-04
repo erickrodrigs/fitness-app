@@ -31,10 +31,10 @@
     "karma-sourcemap-loader": "0.3.7",
     "karma-spec-reporter": "0.0.31",
     "karma-webpack": "2.0.3",
-    "node-sass": "4.5.3",
     "raw-loader": "0.5.1",
     "rimraf": "2.6.1",
-    "sass-loader": "6.0.6",
+    "sass": "^1.62.1",
+    "sass-loader": "^7.0.3",
     "typescript": "2.4.1",
     "webpack": "3.0.0",
     "webpack-dev-server": "2.5.0"
