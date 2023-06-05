@@ -36,8 +36,6 @@ const firebaseConfig: FirebaseAppConfig = {
   imports: [
     CommonModule,
     RouterModule.forChild(ROUTES),
-    LoginModule,
-    RegisterModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule,
     AngularFireDatabaseModule,
