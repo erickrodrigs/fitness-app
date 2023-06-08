@@ -10,9 +10,15 @@ import { WorkoutsService } from "./services/workouts/workouts.service";
 // components
 import { ListItemComponent } from "./components/list-item/list-item.component";
 
+// pipes
+import { JoinPipe } from "./pipes/join.pipe";
+import { WorkoutPipe } from "./pipes/workout.pipe";
+
 @NgModule({
   declarations: [
-    ListItemComponent
+    ListItemComponent,
+    JoinPipe,
+    WorkoutPipe
   ],
   imports: [
     CommonModule,
@@ -20,7 +26,9 @@ import { ListItemComponent } from "./components/list-item/list-item.component";
     AngularFireDatabaseModule
   ],
   exports: [
-    ListItemComponent
+    ListItemComponent,
+    JoinPipe,
+    WorkoutPipe
   ]
 })
 export class SharedModule {
