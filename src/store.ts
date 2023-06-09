@@ -12,6 +12,7 @@ export interface State {
   user: User;
   meals: Meal[];
   workouts: Workout[];
+  date: Date;
   [key: string]: any;
 }
 
@@ -19,6 +20,7 @@ const state: State = {
   user: undefined,
   meals: undefined,
   workouts: undefined,
+  date: undefined,
 };
 
 export class Store {
