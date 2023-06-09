@@ -42,7 +42,7 @@ import { ScheduleItem } from "../../../shared/services/schedule/schedule.service
     </div>
   `
 })
-export class ScheduleSection {
+export class ScheduleSectionComponent {
 
   @Input()
   name: string;

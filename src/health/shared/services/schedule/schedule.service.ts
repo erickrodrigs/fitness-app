@@ -35,6 +35,10 @@ export class ScheduleService {
   selected$ = this.section$
     .do((next) => this.store.set('selected', next));
 
+  list$ = this.section$
+    .map((value: any) => this.store.value[value.type])
+    .do((next) => this.store.set('list', next));
+
   schedule$: Observable<ScheduleList> = this.date$
     .do((next) => this.store.set('date', next))
     .map((day: any) => {
